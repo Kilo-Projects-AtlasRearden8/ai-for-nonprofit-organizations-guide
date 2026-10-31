@@ -1,0 +1,225 @@
+/* AI for Nonprofits — Asdale Dynamics, LLC */
+/* Clean, warm, accessible, print-friendly */
+
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: #e5e7eb;
+  --ink: #111827;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.brand .emph {
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.nav a:hover, .nav a.active {
+  background: #eff6ff;
+  color: var(--accent-hover);
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 2rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.hero p.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 0 1.5rem;
+}
+
+.hero .credit {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Section cards */
+.sections {
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; color: var(--ink); }
+.card p { margin: 0 0 1rem; font-size: 0.92rem; color: var(--muted); }
+.card a.btn {
+  align-self: flex-start;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.card a.btn:hover { background: var(--accent-hover); }
+
+/* Article page */
+.article-wrap {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.article-wrap h2 { font-size: 1.5rem; color: var(--ink); margin-top: 1.75rem; }
+.article-wrap h3 { font-size: 1.15rem; color: var(--ink); margin-top: 1.5rem; }
+.article-wrap p { margin: 0 0 1rem; }
+.article-wrap ul, .article-wrap ol { margin: 0.5rem 0 1rem 1.25rem; padding-left: 1.25rem; }
+.article-wrap li { margin: 0.25rem 0; }
+.article-wrap code { background: #f3f4f6; padding: 0.125rem 0.4rem; border-radius: 4px; font-size: 0.9rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.article-wrap pre { background: #111827; color: #e5e7eb; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+.article-wrap pre code { background: transparent; color: inherit; padding: 0; }
+.article-wrap blockquote { border-left: 4px solid var(--accent); margin: 1rem 0; padding: 0.5rem 1rem; color: var(--muted); }
+.article-wrap table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.article-wrap th, .article-wrap td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; font-size: 0.9rem; }
+.article-wrap th { background: #f3f4f6; }
+.article-wrap .back { display: inline-block; margin-bottom: 1rem; color: var(--muted); font-size: 0.9rem; }
+.article-wrap .back:hover { color: var(--accent); text-decoration: underline; }
+
+/* Planner page */
+.planner-page {
+  max-width: 780px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+}
+
+.planner-page .print-note {
+  font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem;
+}
+
+.planner-page .planner-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.planner-page h2 { font-size: 1.5rem; color: var(--ink); margin-top: 0; }
+.planner-page h3 { font-size: 1.1rem; color: var(--ink); margin-top: 1.25rem; }
+.planner-page p { margin: 0 0 0.75rem; }
+.planner-page ul { margin: 0.5rem 0 1rem 1.25rem; padding-left: 1.25rem; }
+.planner-page li { margin: 0.25rem 0; }
+.planner-page .field { margin-bottom: 1rem; }
+.planner-page .field label { display: block; font-weight: 600; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.25rem; }
+.planner-page .field input, .planner-page .field textarea {
+  width: 100%; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem;
+}
+.planner-page .field textarea { resize: vertical; min-height: 80px; }
+.planner-page .checklist li { display: flex; gap: 0.5rem; align-items: flex-start; }
+.planner-page .checklist input[type=checkbox] { margin-top: 0.1rem; width: auto; }
+.planner-page table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.planner-page th, .planner-page td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; font-size: 0.85rem; }
+.planner-page th { background: #f3f4f6; }
+.planner-page .hr { border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+.planner-page .small { font-size: 0.85rem; color: var(--muted); }
+.planner-page .credit { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+
+/* Print */
+@media print {
+  body { background: #fff; }
+  .site-header, .nav, .back, .print-note, .credit { display: none !important; }
+  .article-wrap, .planner-page, .planner-box { border: none; box-shadow: none; }
+  a { color: inherit; text-decoration: none; }
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.site-footer p { margin: 0; }

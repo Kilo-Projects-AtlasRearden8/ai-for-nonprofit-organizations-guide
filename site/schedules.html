@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Schedules | AI for Nonprofits</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">Asdale Dynamics<span class="emph">, LLC</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="grants.html">Grant letters</a>
+      <a href="thankyous.html">Thank-you notes</a>
+      <a href="flyers.html">Event flyers</a>
+      <a href="schedules.html" class="active">Volunteer schedules</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="prompts.html">Prompt library</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <div class="back"><a href="index.html">&larr; Back to home</a></div>
+
+  <h1>Volunteer schedules with free AI</h1>
+  <p>Scheduling volunteers is half organization, half people-work. AI helps with the organization. You handle the people part.</p>
+
+  <h2>The workflow</h2>
+  <ol>
+    <li><strong>Gather your facts</strong> &mdash; dates, shifts, volunteers needed per shift, availability, role requirements.</li>
+    <li><strong>Give the AI a clean table input</strong> &mdash; shifts and volunteer availability.</li>
+    <li><strong>Check the schedule</strong> &mdash; every shift filled, no one scheduled outside availability, fair distribution.</li>
+    <li><strong>Send reminders</strong> &mdash; draft reminder messages.</li>
+    <li><strong>Handle changes</strong> &mdash; rebalance when someone cancels.</li>
+  </ol>
+
+  <h2>Prompt template</h2>
+  <pre><code>Build a volunteer schedule from these facts. Do not invent volunteers.
+
+Event: [name]
+Dates: [date range]
+
+Shifts needed:
+- [Shift name] | [start] | [end] | volunteers needed: [N]
+
+Volunteers and their availability:
+- [Name] | [available shifts]
+
+Rules:
+- Each shift must have the number of volunteers listed above.
+- Do not schedule a volunteer for a shift they cannot work.
+- Spread shifts fairly.
+
+Output a table: Date | Shift | Time | Volunteers assigned.
+Then list any shifts still unfilled.
+</code></pre>
+
+  <h2>Privacy note</h2>
+  <p>Volunteer names, contact details, and availability are private. Use a <strong>local model</strong>. Do not paste a volunteer list into a hosted service.</p>
+
+  <p class="credit" style="margin-top:2rem;">&copy; 2026 Asdale Dynamics, LLC. MIT licensed.</p>
+</main>
+
+</body>
+</html>

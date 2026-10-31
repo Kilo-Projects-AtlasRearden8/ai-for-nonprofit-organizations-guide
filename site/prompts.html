@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Library | AI for Nonprofits</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">Asdale Dynamics<span class="emph">, LLC</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="grants.html">Grant letters</a>
+      <a href="thankyous.html">Thank-you notes</a>
+      <a href="flyers.html">Event flyers</a>
+      <a href="schedules.html">Volunteer schedules</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="prompts.html" class="active">Prompt library</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <div class="back"><a href="index.html">&larr; Back to home</a></div>
+
+  <h1>Prompt library</h1>
+  <p>Copy-paste starting points. Fill in the <code>[BRACKETS]</code> with your own facts.</p>
+
+  <h2>How to use a prompt well</h2>
+  <ol>
+    <li>Give facts first &mdash; AI cannot guess what you have not told it.</li>
+    <li>Say "use only these facts" &mdash; stops the AI from inventing things.</li>
+    <li>Ask for <code>[INSERT]</code> markers when a fact is missing.</li>
+    <li>Set the tone &mdash; warm, formal, plain, confident.</li>
+    <li>Check everything &mdash; AI drafts are drafts.</li>
+  </ol>
+
+  <h2>Grant letters</h2>
+  <pre><code>Write a grant proposal. Use only these facts.
+
+Organization: [name]
+Mission: [mission]
+Funder priority: [paste funder priority]
+Project: [name and summary]
+Problem: [what problem + example]
+Goal: [what you will achieve]
+Budget: [total amount]
+Timeline: [start, end, reporting date]
+
+Write sections: Executive Summary, Problem Statement, Project Description,
+Goals and Evaluation, Budget Overview (table), Timeline.
+
+Do not invent facts, numbers, or programs. If a fact is missing, write "[INSERT]".
+</code></pre>
+
+  <h2>Donor thank-you notes</h2>
+  <pre><code>Write a warm, sincere thank-you note. Use only these facts.
+
+Donor: [name]
+Gift: $[amount] on [date]
+Impact: [one specific thing the gift provides]
+Tone: [warm / formal / casual]
+Length: 100-150 words
+Do not invent facts or relationships.
+</code></pre>
+
+  <h2>Event flyers</h2>
+  <pre><code>Write flyer copy. Use only these facts.
+
+Event: [name]
+Audience: [who it is for]
+Date: [date]
+Time: [time]
+Location: [address or link]
+What happens: [list]
+How to register: [instructions]
+Contact: [name and email]
+
+Write: Headline, Sub-headline, Description (50-80 words), Key details, Call to action.
+
+Do not invent facts, dates, times, or locations.
+</code></pre>
+
+  <h2>Volunteer schedules</h2>
+  <pre><code>Build a volunteer schedule. Do not invent volunteers.
+
+Event: [name]
+Shifts needed: [shift | start | end | volunteers needed]
+Volunteers and availability: [name | available shifts]
+
+Rules:
+- Each shift must have the listed number of volunteers.
+- Do not schedule a volunteer outside their availability.
+- Spread shifts fairly.
+
+Output: Date | Shift | Time | Volunteers assigned. List unfilled shifts.
+</code></pre>
+
+  <h2>General helpers</h2>
+  <ul>
+    <li><strong>Simplify:</strong> "Rewrite this at a 6th-grade reading level. Keep every fact."</li>
+    <li><strong>Tone shift:</strong> "Rewrite this paragraph in a [warm / formal / urgent / casual] tone."</li>
+    <li><strong>Grammar:</strong> "Fix spelling and grammar. Do not change the meaning."</li>
+    <li><strong>Summarize:</strong> "Summarize this document in 3 bullets."</li>
+  </ul>
+
+  <p class="credit" style="margin-top:2rem;">&copy; 2026 Asdale Dynamics, LLC. MIT licensed.</p>
+</main>
+
+</body>
+</html>

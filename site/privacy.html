@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy-Safe Workflow | AI for Nonprofits</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">Asdale Dynamics<span class="emph">, LLC</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="grants.html">Grant letters</a>
+      <a href="thankyous.html">Thank-you notes</a>
+      <a href="flyers.html">Event flyers</a>
+      <a href="schedules.html">Volunteer schedules</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="prompts.html">Prompt library</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <div class="back"><a href="index.html">&larr; Back to home</a></div>
+
+  <h1>Privacy-safe workflow</h1>
+  <p>This guide is built around one promise: <strong>your data stays on your computer.</strong></p>
+
+  <h2>The three data zones</h2>
+  <table>
+    <thead>
+      <tr><th>Zone</th><th>What goes in</th><th>Where it runs</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Public</td><td>Event flyers, public schedules</td><td>Anywhere</td></tr>
+      <tr><td>Internal</td><td>Budgets, volunteer lists, donor names</td><td>Local model only</td></tr>
+      <tr><td>Secret</td><td>Bank details, passwords, personal addresses</td><td>Never in AI</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Rules for every task</h2>
+  <ul>
+    <li><strong>Grant letters:</strong> budgets are internal. Use a local model.</li>
+    <li><strong>Donor thank-yous:</strong> names and amounts are internal. Use a local model.</li>
+    <li><strong>Event flyers:</strong> public by nature. Safe for hosted models &mdash; but no personal phone numbers.</li>
+    <li><strong>Volunteer schedules:</strong> names and availability are internal. Use a local model.</li>
+  </ul>
+
+  <h2>How to use a hosted model safely</h2>
+  <ol>
+    <li>Strip all names, amounts, phone numbers, and addresses.</li>
+    <li>Replace them with placeholders: <code>[ORGANIZATION]</code>, <code>[AMOUNT]</code>, <code>[VOLUNTEER A]</code>.</li>
+    <li>Ask the model to work on structure only.</li>
+    <li>Fill in real data yourself, on your computer.</li>
+  </ol>
+
+  <h2>Local model setup</h2>
+  <pre><code>ollama pull llama3.2
+ollama run llama3.2
+</code></pre>
+
+  <h2>Checklist before you send</h2>
+  <ul class="checklist">
+    <li><input type="checkbox"> No names or amounts sent to a hosted service.</li>
+    <li><input type="checkbox"> No API keys or secrets in any file.</li>
+    <li><input type="checkbox"> Sensitive drafts saved only on your computer.</li>
+    <li><input type="checkbox"> A real human read the final document.</li>
+  </ul>
+
+  <p class="credit" style="margin-top:2rem;">&copy; 2026 Asdale Dynamics, LLC. MIT licensed.</p>
+</main>
+
+</body>
+</html>

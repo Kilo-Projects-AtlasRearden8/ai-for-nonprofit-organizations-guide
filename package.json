@@ -1,0 +1,29 @@
+{
+  "name": "ai-for-nonprofit-organizations-guide",
+  "version": "1.0.0",
+  "description": "Beginner manual and static HTML site: AI for nonprofits and volunteer groups. Grant letters, donor thank-you notes, event flyers, and volunteer schedules with free models. Printable, privacy-safe planners.",
+  "license": "MIT",
+  "author": "Asdale Dynamics, LLC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylanasdale/ai-for-nonprofit-organizations-guide"
+  },
+  "keywords": [
+    "nonprofit",
+    "ai",
+    "volunteer",
+    "grant-writing",
+    "free-models",
+    "privacy",
+    "planner"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "serve": "python3 -m http.server 8000 -d site"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}

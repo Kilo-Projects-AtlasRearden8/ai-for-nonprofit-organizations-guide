@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Schedule Planner | AI for Nonprofits</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">Asdale Dynamics<span class="emph">, LLC</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="planner-grant.html">Grant planner</a>
+      <a href="planner-thankyou.html">Thank-you planner</a>
+      <a href="planner-flyer.html">Flyer planner</a>
+      <a href="planner-schedule.html" class="active">Schedule planner</a>
+    </nav>
+  </div>
+</header>
+
+<main class="planner-page">
+  <div class="print-note">Print this page (Ctrl/Cmd + P) or save as PDF. Fill it in before you schedule.</div>
+
+  <div class="planner-box">
+    <h2>Volunteer Schedule Planner</h2>
+    <p class="small">Plan your shifts and volunteers on one page. Then draft reminders with AI.</p>
+
+    <div class="field">
+      <label>Event name</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Date range</label>
+      <input type="text">
+    </div>
+
+    <hr class="hr">
+
+    <h3>Shifts needed</h3>
+    <table>
+      <thead>
+        <tr><th>Shift name</th><th>Start</th><th>End</th><th>Volunteers needed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <hr class="hr">
+
+    <h3>Volunteers and availability</h3>
+    <table>
+      <thead>
+        <tr><th>Volunteer name</th><th>Available shifts</th><th>Role / training</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <hr class="hr">
+
+    <h3>Schedule grid</h3>
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Shift</th><th>Time</th><th>Volunteers assigned</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+    <p class="small">Unfilled shifts: ______________________</p>
+
+    <hr class="hr">
+
+    <h3>Reminder messages (draft)</h3>
+    <div class="field">
+      <textarea rows="4" placeholder="Draft one reminder per shift: event, date, time, location, what to bring."></textarea>
+    </div>
+
+    <hr class="hr">
+
+    <h3>Checklist</h3>
+    <ul class="checklist">
+      <li><input type="checkbox"> Every shift has the required number of volunteers</li>
+      <li><input type="checkbox"> No one scheduled outside their availability</li>
+      <li><input type="checkbox"> Shifts distributed fairly</li>
+      <li><input type="checkbox"> Every volunteer knows their shift</li>
+      <li><input type="checkbox"> Backup contact if someone cancels</li>
+    </ul>
+
+    <hr class="hr">
+
+    <h3>Privacy</h3>
+    <p class="small">Schedules contain names and contact details. Use a local model for drafting. Do not paste volunteer lists into hosted services.</p>
+
+    <div class="credit">&copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; Privacy-safe: fill in locally, nothing sent anywhere.</div>
+  </div>
+</main>
+
+</body>
+</html>
